@@ -5159,37 +5159,37 @@ var $elm$core$Task$perform = F2(
 				A2($elm$core$Task$map, toMessage, task)));
 	});
 var $elm$browser$Browser$element = _Browser_element;
-var $author$project$HomePage$StartPage = {$: 'StartPage'};
+var $author$project$ModelsAndTypes$StartPage = {$: 'StartPage'};
 var $elm$core$Platform$Cmd$batch = _Platform_batch;
 var $elm$core$Platform$Cmd$none = $elm$core$Platform$Cmd$batch(_List_Nil);
-var $author$project$HomePage$init = function (_v0) {
+var $author$project$Main$init = function (_v0) {
 	return _Utils_Tuple2(
-		{page: $author$project$HomePage$StartPage},
+		{page: $author$project$ModelsAndTypes$StartPage},
 		$elm$core$Platform$Cmd$none);
 };
 var $elm$virtual_dom$VirtualDom$style = _VirtualDom_style;
 var $elm$html$Html$Attributes$style = $elm$virtual_dom$VirtualDom$style;
-var $author$project$HomePage$alignItemsCenterStyle = A2($elm$html$Html$Attributes$style, 'align-items', 'center');
-var $author$project$HomePage$displayFlexStyle = A2($elm$html$Html$Attributes$style, 'display', 'flex');
+var $author$project$CssStyles$alignItemsCenterStyle = A2($elm$html$Html$Attributes$style, 'align-items', 'center');
+var $author$project$CssStyles$displayFlexStyle = A2($elm$html$Html$Attributes$style, 'display', 'flex');
 var $elm$html$Html$div = _VirtualDom_node('div');
-var $author$project$HomePage$justifyContentCenterStyle = A2($elm$html$Html$Attributes$style, 'justify-content', 'center');
+var $author$project$CssStyles$justifyContentCenterStyle = A2($elm$html$Html$Attributes$style, 'justify-content', 'center');
 var $elm$virtual_dom$VirtualDom$text = _VirtualDom_text;
 var $elm$html$Html$text = $elm$virtual_dom$VirtualDom$text;
-var $author$project$HomePage$textFontSizeStyle = function (size) {
+var $author$project$CssStyles$textFontSizeStyle = function (size) {
 	return A2(
 		$elm$html$Html$Attributes$style,
 		'font-size',
 		$elm$core$String$fromInt(size) + 'px');
 };
-var $author$project$HomePage$mainView = function (model) {
+var $author$project$Views$MainView$mainView = function (model) {
 	return A2(
 		$elm$html$Html$div,
 		_List_fromArray(
 			[
-				$author$project$HomePage$displayFlexStyle,
-				$author$project$HomePage$justifyContentCenterStyle,
-				$author$project$HomePage$alignItemsCenterStyle,
-				$author$project$HomePage$textFontSizeStyle(50),
+				$author$project$CssStyles$displayFlexStyle,
+				$author$project$CssStyles$justifyContentCenterStyle,
+				$author$project$CssStyles$alignItemsCenterStyle,
+				$author$project$CssStyles$textFontSizeStyle(50),
 				A2($elm$html$Html$Attributes$style, 'background', '#F0E68C')
 			]),
 		_List_fromArray(
@@ -5199,14 +5199,14 @@ var $author$project$HomePage$mainView = function (model) {
 };
 var $elm$core$Platform$Sub$batch = _Platform_batch;
 var $elm$core$Platform$Sub$none = $elm$core$Platform$Sub$batch(_List_Nil);
-var $author$project$HomePage$subscriptions = function (_v0) {
+var $author$project$Main$subscriptions = function (_v0) {
 	return $elm$core$Platform$Sub$none;
 };
-var $author$project$HomePage$update = F2(
+var $author$project$Main$update = F2(
 	function (msg, model) {
 		return _Utils_Tuple2(model, $elm$core$Platform$Cmd$none);
 	});
-var $author$project$HomePage$main = $elm$browser$Browser$element(
-	{init: $author$project$HomePage$init, subscriptions: $author$project$HomePage$subscriptions, update: $author$project$HomePage$update, view: $author$project$HomePage$mainView});
-_Platform_export({'HomePage':{'init':$author$project$HomePage$main(
+var $author$project$Main$main = $elm$browser$Browser$element(
+	{init: $author$project$Main$init, subscriptions: $author$project$Main$subscriptions, update: $author$project$Main$update, view: $author$project$Views$MainView$mainView});
+_Platform_export({'Main':{'init':$author$project$Main$main(
 	$elm$json$Json$Decode$succeed(_Utils_Tuple0))(0)}});}(this));
