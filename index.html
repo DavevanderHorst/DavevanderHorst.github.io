@@ -5,7 +5,13 @@
     <title>Lotte's Website</title>
 </head>
 <body>
-    <h1>Hallo allemaal!</h1>
-    <p>Ik ben Lotte.</p>
+    <div id="elm-app-is-loaded-here"></div>
+
+    <script src="elm.js"></script>
+    <script>
+        var app = Elm.HomePage.init({
+            node: document.getElementById("elm-app-is-loaded-here")
+        });
+    </script>
 </body>
 </html>
